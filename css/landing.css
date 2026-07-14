@@ -1,0 +1,122 @@
+:root{
+
+    --black:#050505;
+
+    --dark:#111111;
+
+    --gold:#FFD700;
+
+    --gold2:#ffb300;
+
+    --white:#ffffff;
+
+    --gray:#bbbbbb;
+
+    --glass:rgba(255,255,255,.05);
+
+}
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #050505,
+        #111111,
+        #050505
+    );
+
+    color:var(--white);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+    background:
+
+        radial-gradient(
+            circle at top,
+            rgba(255,215,0,.08),
+            transparent 45%
+        ),
+
+        radial-gradient(
+            circle at bottom,
+            rgba(255,180,0,.05),
+            transparent 55%
+        );
+
+}
+
+.container{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    background:var(--glass);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,215,0,.15);
+
+    box-shadow:
+
+        0 0 50px rgba(0,0,0,.5);
+
+}
